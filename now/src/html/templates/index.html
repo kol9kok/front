@@ -1,0 +1,19 @@
+<%
+var htmlTopProps = { title: "Заголовок страницы - Проект" };
+var titleProps = {
+  className: 'title',
+  text: `<span>Home</span>`,
+};
+var sectionProps = {
+  className: 'section',
+  title: _.template(require('./../blocks/title.html').default)(titleProps)
+};
+%>
+
+<%=_.template(require('./../_html-top.html').default)(htmlTopProps)%>
+<%=_.template(require('./../sections/header.html').default)()%>
+<main>
+  <%=_.template(require('./../sections/section.html').default)(sectionProps)%>
+</main>
+<%=_.template(require('./../sections/footer.html').default)()%>
+<%=_.template(require('./../_html-bottom.html').default)()%>

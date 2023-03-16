@@ -1,0 +1,43 @@
+:root {
+  --palette-primary-main: #d39b75;
+  //--palette-primary-light: #dab7a3;
+  //--palette-primary-text: #222;
+  //--palette-secondary-main: #21574a;
+  //--palette-secondary-light: #628272;
+  //--palette-secondary-text: #fff;
+  //--palette-tertiary-main: #9ca18d;
+  //--palette-tertiary-text: #222;
+  --palette-text-primary: #222;
+  //--palette-text-secondary: #a6a6a6;
+  //--palette-text-disabled: #a6a6a6;
+  --palette-background-paper: #f9f9f9;
+  --palette-background-default: #fff;
+  //--palette-error-main: #f14336;
+  //--palette-success-main: #5ab654;
+  //--palette-divider: #e5e5e5;
+
+  //--border-radius: 5px;
+
+  //--shadows-1: inset 0 -1px 0 #dadada;
+  //--shadows-2: 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.05);
+  //--shadows-3: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.1);
+  //--shadows-4: 0 0 3px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(0, 0, 0, 0.15);
+  //--shadows-5: 0 0 4px rgba(0, 0, 0, 0.1), 0 8px 40px rgba(0, 0, 0, 0.2);
+
+  --typography-htmlFontSize: pxToRem(16px);
+  --typography-fontFamily: Comfortaa, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --typography-fontFamily-headings: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  //--typography-fontWeightLight: 300;
+  //--typography-fontWeightMedium: 500;
+  //--typography-fontWeightBold: 700;
+  //--typography-fontWeightBolder: 900;
+
+  //--filters-blur: 10px;
+  //--filters-opacity: 0.5;
+
+  //--spacing-container: 24px;
+}

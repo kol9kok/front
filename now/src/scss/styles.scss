@@ -1,0 +1,24 @@
+// Libs
+@import "~destyle.css/destyle.css";
+
+// Base
+@import "base/functions";
+@import "base/icons";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/root";
+@import "base/reboot";
+
+// Blocks
+// ...
+
+// Sections
+@import "sections/header";
+@import "sections/footer";
+
+// Templates
+// ...
+
+main{
+    margin-top: 150px;
+}
