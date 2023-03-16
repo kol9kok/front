@@ -1,82 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-
-:root {
-    /* Colors */ 
-    --white_color : rgb(255, 255, 255);
-    --gold_color: rgb(255, 215, 0);
-    --green_color: rgb(45, 252, 26);
-    --body_background: linear-gradient(to right, #141e30, #243b55);
-    --spin_background: linear-gradient(to right, #fc4a1a, #f7b733);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'PT Serif', serif;
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	min-height: 100vh;
+	background: #9e00be;
 }
-body {
-  height: 100vh;
-  background: var(--body_background);
+.container{
+	height: 350px;
+	width: 350px;
+	background: #c94ed4;
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 10px gray;
+	transition: 3s all;
 }
-h1 {
-  position: absolute;
-  font-size: 4rem;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--gold_color);
+.container div{
+	height: 50%;
+	width: 200px;
+	clip-path: polygon(100% 0,50% 100%, 0 0);
+	transform: translateX(-50%);
+	transform-origin: bottom;
+	position: absolute;
+	left: 21%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-family: monospace;
+	font-weight: 1000;
+	color:#ffffff; 
+	 writing-mode: vertical-rl;
 }
-.container {
-  width: 90%;
-  max-width: 34.37rem;
-  margin-top: 3rem;
-  max-height: 90vh;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  padding: 3rem; 
-  border-radius: 1rem;
+.container .one{
+	background: #e8baf4;
+	left: 50%;
 }
-.wheel_box {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.container .two{
+	background: #b24ed4;
+	transform: rotate(60deg);
 }
-#spinWheel {
-  max-height: inherit;
-  width: inherit;
-  transform: rotate(270deg);
+.container .three{
+	background: #e8baf4;
+	transform: rotate(120deg);
 }
-#spin_btn {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  height: 26%;
-  width: 26%;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 0;
-  background: var(--spin_background);
-  color: var(--white_color);
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
+.container .four{
+	background: #b24ed4;
+	transform: rotate(180deg);
 }
-.fa-solid {
-  position: absolute;
-  top: -8%;
-  left: 43.7%;
-  font-size: 4rem;
-  color: var(--green_color);
-  transform: rotate(-225deg);
-}
-#text {
-  font-size: 1.5rem;
+.container .five{
+	background: #e8baf4;
+	transform: rotate(240deg);
   text-align: center;
-  margin-top: 1.5rem;
-  color: var(--gold_color);
-  font-weight: 500;
 }
+.container .six{
+	background: #b24ed4;
+	transform: rotate(300deg);
+}
+.mid{
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	position: absolute;
+	background: #570082;
+}
+#spin{
+	height: 60px;
+	width: 200px;
+	background: #c44ed4;
+	position: absolute;
+	margin-top: 600px;
+	font-size: 30px;
+	color: white;
+	font-weight: 1000;
+	letter-spacing: 4px;
+	border: 1px solid white;
+	cursor: pointer;
+	box-shadow: 0 5px 10px gray;
+	transition: 0.2s all;
+}
+#spin:hover{
+	box-shadow: none;
+}
+.stoper{
+	height: 50px;
+	width: 40px;
+	background: #ffd600;
+	position: absolute;
+	clip-path: polygon(100% 0,50% 100%, 0 0);
+	margin-top: -350px;
+}
+
